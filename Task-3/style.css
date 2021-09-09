@@ -17,7 +17,7 @@ h1{
     margin-left: 100px;
     font-family: 'Satisfy', cursive;
     font-size: 55px;
-    color: #0fd1c7be;
+    color: crimson;
     text-shadow: 2px 2px 4px #361c1cd7;
 }
 .flipdown {
@@ -42,4 +42,14 @@ h1{
     .flipdown{
         margin-left: 50px;
     }
+}
+@media(max-width:450px){
+    .flipdown{
+        margin: 0;
+        padding: 2px;
+    }
+   h1{
+    margin-left: 20px;
+    color: yellowgreen;
+   }
 }
