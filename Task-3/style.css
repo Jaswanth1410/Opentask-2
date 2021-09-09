@@ -45,11 +45,11 @@ h1{
 }
 @media(max-width:450px){
     .flipdown{
-        margin: 0;
+        margin: 10%;
         padding: 2px;
     }
    h1{
-    margin-left: 20px;
+    margin-left: 30px;
     color: yellowgreen;
    }
 }
