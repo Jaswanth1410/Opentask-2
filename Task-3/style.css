@@ -45,7 +45,7 @@ h1{
 }
 @media(max-width:450px){
     .flipdown{
-        margin: 10%;
+        margin: 10px;
         padding: 2px;
     }
    h1{
