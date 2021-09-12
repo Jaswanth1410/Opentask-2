@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>WEATHER-STATUS</title>
+    <link rel="icon" href="icons/sun.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
+<body>
+    <div class="app-main">
+        <div class="searchInputBox">
+            <input type="text" id="input-box" class="input-box" placeholder="Enter city name..." autocomplete="off">
+        </div>
+
+        <div class="weather-body">
+            <div class="location-details">
+                <div class="city" id="city">Amravati, IN</div>
+                <div class="date" id="date">10 June (Wednesday), 2020</div>
+            </div>
+
+            <div class="weather-status">
+                <div id="img"><img id="icon" src="icons/sun.svg" alt=""></div>
+                <div class="temp" id="temp">34&deg;C</div>
+                <div class="min-max" id="min-max">32&deg;C (min) / 34&deg;C (max)</div>
+                <div class="weather" id="weather">Clear</div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
