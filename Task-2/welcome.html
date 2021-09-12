@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+ 
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background:url(https://i.pinimg.com/originals/53/c8/09/53c8094f4315f17faa57843d9b680222.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        section{
+            transform: translateY(200px);
+            font-family: "Maiandra GD";
+        }
+        span{
+            font-size: 65px;
+            color: tomato;
+            padding: 10px;
+            padding-bottom: 0px;
+        }
+        .success{
+            font-size: 30px;
+            color:wheat;
+            padding: 10px;
+        }
+        .btn{
+            margin-top: 20px;
+           margin-bottom: 20px;
+           width: 150px;
+           border: 1px solid whitesmoke;
+           border-radius: 5px;
+           text-align: center;
+           padding: 8px;
+        }
+        .btn:hover{
+                 background-color: blue;
+                 color: white;
+       }
+    </style>
+</head>
+<body>
+    <center><section>
+    <span id="message"></span>
+    <div class="success">You are Successfully loged in!!</div>
+    <button class="btn" onclick="logout();">LogOut</button>
+    </section>  </center>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+
+    <script src="index.js"></script>
+    <script src="welcome.js"></script>
+</body>
+</html>

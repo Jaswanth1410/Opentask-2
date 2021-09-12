@@ -35,8 +35,8 @@ h1{
 }
 .by{
     transform: translateY(200px);
-    color: #c4d10fbe;
-    text-shadow: 2px 2px 4px #805656d7;
+    color: #ffd902be;
+    text-shadow: 2px 2px 4px #000000d7;
 }
 @media(max-width:805px){
     .flipdown{

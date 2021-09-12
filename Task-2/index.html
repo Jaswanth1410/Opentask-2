@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-SignUp</title>
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/banking-finance-circular-vol-04/84/verification_key_password_success_secure_correct_authentication-512.png" />
+    <style>
+           *{
+            padding: 0;
+            margin: 0;
+            font-family: "Maiandra GD";
+        }
+       body{
+           width: 100%;
+           height: 100vh;
+           background:url(https://wallpaperaccess.com/full/526288.jpg);
+           background-position: center;
+            background-size: cover;
+            position: relative;
+           
+       }
+       .container{
+        position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           padding: 100px;
+           border: 1.5px solid whitesmoke;
+           background-color: white;
+           border-radius: 10px;
+           box-shadow: wheat;
+       }
+       input{
+           border: none;
+           background: transparent;
+           border-bottom: 1.5px solid black;
+           padding: 7px;
+           width: 250px;
+           margin-top: 2px;
+           margin-bottom: 8px;
+           font-size: 15px;
+       }
+       #signup{
+           margin-top: 20px;
+           margin-bottom: 20px;
+           width: 260px;
+           border: 1px solid whitesmoke;
+           border-radius: 5px;
+           text-align: center;
+           padding: 8px;
+       }
+       #signup:hover{
+                 background-color: blue;
+                 color: white;
+       }
+       p{
+          overflow: hidden;
+         text-align: center;
+         color: rgb(105, 97, 97);
+       }
+
+       p:before,
+       p:after {
+         background-color: wheat;
+         content: "";
+          display: inline-block;
+          height: 1px;
+          position: relative;
+          vertical-align: middle;
+          width: 50%;
+       }
+
+       p:before {
+         right: 0.5em;
+          margin-left: -50%;
+       }
+
+       p:after {
+          left: 0.5em;
+          margin-right: -50%;
+       }
+       #signin{
+           margin-top: 20px;
+           margin-bottom: 20px;
+           width: 260px;
+           border: 1px solid whitesmoke;
+           border-radius: 5px;
+           text-align: center;
+           padding: 8px;
+       }
+       #signin:hover{
+                 background-color: blue;
+                 color: white;
+       }
+       #con{
+           display:block;
+       }
+       #con1{
+           display: none;
+       }
+       h1{
+           color: rgb(255, 238, 0);
+           text-shadow: rgb(255, 38, 0) 2px 3px 4px ;
+           padding-top: 50px;
+       }
+    </style>
+</head>
+<body>
+    <center><h1>Authentication Form</h1></center>
+<!--  
+    <form onsubmit="login();" class="sign-in-form" id="loginForm" > -->
+
+   <!-- Sign up -->
+   <div class="container" id="con">
+    <input type="text" name="uname" id="uname" placeholder="Name"><br>
+    <input type="email" name="uemail" id="uemail" placeholder="Email"><br>
+    <input type="password" name="upass" id="upass" placeholder="Password"><br>
+    <button type="submit" name="signup" id="signup" onclick="signup();">Sign Up</button><br>
+    <p>OR</p>
+    <button name="signin" id="signin"  onclick="dislog();" >Alredy a User? Log In.</button>
+    </div> 
+
+         <!-- Log in  -->
+    <div class="container " id="con1" >
+        <input type="email" name="uemail" id="uemail" placeholder="Email"><br>
+        <input type="password" name="upass" id="upass" placeholder="Password"><br>
+        <button type="submit" name="signin" id="signin" onclick="login();">Log In</button><br>
+        <p>OR</p>
+        <button type="submit" name="signup" id="signup" onclick="dissig();">Create An Account? Rigiester Here.</button>
+    </div>
+    <!-- </form> -->
+   <script>
+       function dislog()
+{
+    document.getElementById("con").style.display = "none";
+    document.getElementById("con1").style.display = "block";
+}
+function dissig()
+{
+    document.getElementById("con").style.display = "block";
+    document.getElementById("con1").style.display = "none";
+}
+   </script>
+       <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+       <script src="index.js"></script>
+</body>
+</html>
